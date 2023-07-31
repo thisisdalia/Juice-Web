@@ -1,0 +1,122 @@
+.burger {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-burger {
+  cursor: pointer;
+}
+
+.line1 {
+  background: rgb(238, 155, 47);
+}
+.line2 {
+  background: rgb(74, 136, 74);
+}
+.line3 {
+  background: rgb(204, 63, 94);
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 2rem;
+  height: 2px;
+  margin: 0.5rem;
+  transition: 1s all ease-in-out;
+}
+.line1-invalid {
+  background: rgb(238, 155, 47);
+  transform: rotate(-45deg);
+  transform-origin: 22px 7px;
+  width: 2rem;
+  height: 2px;
+  margin: 0.5rem;
+  transition: 1s all ease-in-out;
+}
+.line3-invalid {
+  background: rgb(204, 63, 94);
+  transform: rotate(45deg);
+  transform-origin: 21px -4px;
+  width: 2rem;
+  height: 2px;
+  margin: 0.5rem;
+  transition: 1s all ease-in-out;
+}
+
+.burger-menu {
+  height: 35vh;
+  padding: 0.5rem 5rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    80deg,
+    rgba(238, 155, 47, 0.466),
+    rgba(74, 136, 74, 0.486),
+    rgba(204, 63, 94, 0.445)
+  );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  animation: floating 3s infinite ease-in-out;
+  transform: translateY(0px);
+}
+.burger-menu-invalid{
+  transition: 5s all ease-out;
+  opacity: 0;
+}
+@keyframes floating {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.5);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(15px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.5);
+    transform: translatey(0px);
+  }
+}
+
+.menu1,
+.menu2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu1 a,
+.menu2 a {
+  color: #e0e9c8;
+  margin: 0.5rem;
+}
+.menu1 a:hover,
+.menu2 a:hover {
+  color: rgb(204, 63, 94);
+}
+
+.menu2 {
+  margin-bottom: 0.5rem;
+}
+
+/* responsive */
+
+@media screen and (max-width: 450px) {
+  .burger-menu {
+    height: 25vh;
+  }
+  .menu1 a,
+  .menu2 a {
+    margin: 0.4rem;
+  }
+}

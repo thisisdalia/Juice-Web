@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+
+.main-footer {
+  background: #e0e9c8;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.footer-title h1 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Cinzel", serif;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(238, 155, 47),
+    rgb(74, 136, 74),
+    rgb(204, 63, 94)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-hero {
+  border-top-right-radius: 50rem;
+  border-top-left-radius: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-img img {
+  object-fit: cover;
+  box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+  height: 53vh;
+  width: 50vw;
+  border-top-right-radius: 15rem;
+  border-bottom-left-radius: 15rem;
+}
+.footer-icon {
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 20vh;
+}
+
+.footer-icon ul {
+  margin-top: 3rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-icon ul img {
+  cursor: pointer;
+  height: 3rem;
+  margin: 0.5rem 2rem;
+  padding: 2px;
+  border-radius: 4rem;
+  transition: 0.3s all ease-in-out;
+}
+
+.icon1:hover,
+.icon2:hover {
+  height: 2.5rem;
+  box-shadow: 0px 0px 10px 5px rgb(238, 155, 47);
+}
+.icon3:hover,
+.icon4:hover {
+  height: 2.5rem;
+  box-shadow: 0px 0px 10px 5px rgb(74, 136, 74);
+}
+.icon5:hover,
+.icon6:hover {
+  height: 2.5rem;
+  box-shadow: 0px 0px 10px 5px rgb(204, 63, 94);
+}
+
+/* responsive*/
+@media screen and (max-width: 800px) {
+  .footer-title h1 {
+    font-size: 2rem;
+  }
+  .footer-img img {
+    width: 70vw;
+  }
+  .footer-icon ul img {
+    height: 2.5rem;
+    margin: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer-img img {
+    height: 40vh;
+    width: 90vw;
+  }
+}

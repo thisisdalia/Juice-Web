@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+
+.main-j2 {
+  background: #e0e9c8;
+  direction: rtl;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.j2-img img {
+  width: 40vw;
+  max-height: 80vh;
+  border-radius: 50%;
+  border: 2px solid rgb(238, 155, 47);
+  animation: floating 3s infinite ease-in-out;
+  transform: translateY(0px);
+}
+@keyframes floating {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.5);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(15px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.5);
+    transform: translatey(0px);
+  }
+}
+.j2-text {
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem 6rem;
+}
+
+.j2-text h1 {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  color: rgb(238, 155, 47);
+  font-family: "Cinzel", serif;
+}
+.j2-text h6 {
+  margin: 0.5rem;
+}
+.j2-text p {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 12rem;
+  line-height: 1.2rem;
+  margin: 0.7rem;
+  font-family: "Spectral", serif;
+}
+.j2-btn1 {
+  background: #a1a786;
+  color: white;
+  text-align: center;
+}
+.j2-btn1:hover {
+  width: 18rem;
+  height: 3rem;
+  font-size: 1rem;
+  background: rgb(238, 155, 47);
+  border: 2px solid rgb(238, 155, 47);
+}
+
+.j2-btn2 {
+  background: #e0e9c8;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 550;
+}
+
+.j2-btn2:hover {
+  background: rgba(238, 155, 47, 0.596);
+  border: 2px solid rgb(238, 155, 47);
+}
+
+.j2-btn2:focus {
+  color: white;
+  background: rgba(238, 155, 47, 0.747);
+  border: 2px solid rgb(238, 155, 47);
+  box-shadow: inset 0px 0px 10px 3px #c77e1fc7;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1000px) {
+  .j2-text {
+    width: 15rem;
+  }
+
+  .j2-text h1 {
+    font-size: 1.3rem;
+  }
+  .j2-text p {
+    font-size: 0.75rem;
+  }
+
+  .j2-btn1 {
+    width: 13rem;
+  }
+  .j2-btn1:hover {
+    width: 15rem;
+    height: 2.5rem;
+  }
+
+  .j2-btn2 {
+    width: 13rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-j2 {
+    height: 85vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .j2-text {
+    height: 14rem;
+  }
+}

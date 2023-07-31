@@ -1,0 +1,31 @@
+.main-header {
+  background: none;
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem 2rem;
+}
+
+.header-wrapper h1 {
+  font-size: 2.5rem;
+  cursor: pointer;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(238, 155, 47),
+    rgb(74, 136, 74),
+    rgb(204, 63, 94)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

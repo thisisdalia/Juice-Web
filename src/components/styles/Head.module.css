@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+
+.main-head {
+  min-height: 100vh;
+  background: #e0e9c8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.head-title {
+  font-family: "Cinzel", serif;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(238, 155, 47),
+    rgb(74, 136, 74),
+    rgb(204, 63, 94)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.head-img img {
+  object-fit: cover;
+  border-radius: 50rem;
+  max-height: 50vh;
+  min-width: 50vw;
+  margin: 0.5rem;
+}
+
+.head-text h1 {
+  font-family: "Inconsolata", monospace;
+  color: #076907;
+  margin: 0.5rem 4rem;
+  line-height: 2.5rem;
+}
+.head-text p {
+  color: #076907;
+  line-height: 1.7rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0rem 1.5rem;
+}
+
+/* responsive */
+
+@media screen and (max-width: 700px) {
+  .head-title {
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .head-img img {
+    width: 90vw;
+  }
+}

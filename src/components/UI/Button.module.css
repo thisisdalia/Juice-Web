@@ -1,0 +1,9 @@
+.btn {
+  width: 16rem;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border-radius: 2rem;
+  border: 2px solid  #a1a786;
+  transition: 0.5s ease;
+}
